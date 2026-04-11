@@ -54,7 +54,10 @@ def _no_perm_embed():
 
 def _usage_embed(title: str, usage: str):
     """Yellow embed with error gif for incomplete/wrong usage."""
-    return error_embed(title, usage, gif_key="error")
+    embed = mod_embed(title, None)
+    embed.set_image(url="https://cdn.discordapp.com/attachments/1474488131184103678/1474506174677385479/incredibles_warn.gif")
+    embed.add_field(name="Usage", value=usage, inline=False)
+    return embed
 
 
 class DelWarnSelect(discord.ui.Select):
