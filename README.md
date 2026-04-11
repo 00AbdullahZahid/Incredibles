@@ -1,54 +1,64 @@
-Discord Moderation & Music Bot
-A comprehensive, high-performance Discord utility bot built with Python. This project combines advanced server management tools with a robust, professional-grade music streaming system.
+🛡️ Incredibles - Advanced Discord Utility & Music Bot
+A high-performance Discord bot engineered with Python and Nextcord, designed to provide professional-grade moderation and a seamless music streaming experience.
 
-🚀 Key Features
-Advanced Moderation & Utility
-Full Moderation Suite: Includes ban, kick, mute, warn, purge, and lock commands.
+🌟 Key Highlights
+Custom Library Patch: Solved compatibility issues between Wavelink 3.4.1 and Lavalink 4.2.2 by manually patching the missing channelId field, ensuring stable end-to-end audio connectivity.
 
-Automated Systems: AFK status tracking and a specialized Ticket System for user support.
+Resilient Streaming: Integrated OAuth authentication within the YouTube plugin configuration to bypass playback restrictions and ensure consistent uptime.
 
-Deep Logging: Automatic activity tracking across 8 separate log categories for maximum server transparency.
+Modular Architecture: Built using a clean, organized structure to handle complex command sets across moderation and entertainment.
 
-Visuals: Information delivered via clean, color-coded embeds for a professional UI/UX.
+🚀 Features
+Professional Moderation & Utility
+Comprehensive Suite: Robust commands for ban, kick, mute, warn, purge, and lock.
 
-Pro-Grade Music System
-Technical Engineering: Successfully bridged Wavelink 3.4.1 to Lavalink 4.2.2 by custom-patching the channelId field dependency.
+Automated Systems: Integrated AFK system and a custom Ticket System for server support management.
 
-YouTube Integration: Configured with OAuth authentication to ensure stable playback and bypass common streaming restrictions.
+Advanced Logging: Automatic tracking across 8 distinct log categories, providing high visibility into server activity.
 
-Interactive Controls: Full music controller with queue management, looping, autoplay, and volume normalization.
+Information Retrieval: Detailed server and user info commands with color-coded embed responses.
 
-Rich Audio: Powered by Lavalink for low-latency, high-quality sound.
+Pro-Level Music Experience
+Interactive UI: Full-featured music control panel with an intuitive interface.
+
+Smart Playback: Supports queue management, looping, and autoplay functionality.
+
+Precision Control: High-quality audio with volume normalization and low-latency streaming via Lavalink.
 
 🛠️ Technical Stack
 Language: Python
 
-Library: Discord.py / Nextcord (Adjust based on what you used)
+Framework: Nextcord
 
-Audio Provider: Lavalink 4.2.2
+Audio Engine: Lavalink 4.2.2
 
-Wrapper: Wavelink 3.4.1 (Patched)
+Connection Wrapper: Wavelink 3.4.1 (Custom Patched)
 
-Database: SQLite / MySQL (Add yours here)
+Data Handling: JSON / SQLite (Edit based on your exact storage)
 
-🔧 Installation & Setup
-Clone the repository:
+🔧 Installation & Configuration
+Clone the Repo
 
 Bash
-git clone https://github.com/00AbdullahZahid/your-repo-name.git
-Install dependencies:
+git clone https://github.com/00AbdullahZahid/Incredibles.git
+cd Incredibles
+Install Dependencies
 
 Bash
 pip install -r requirements.txt
-Configure Lavalink:
-Ensure you have a Lavalink.jar running with the version 4.2.2.
+Lavalink Setup
 
-Environment Variables:
-Create a .env file and add your BOT_TOKEN and Lavalink credentials.
+Download Lavalink.jar (v4.2.2).
 
-Run the bot:
+Ensure the application.yml is configured with the correct YouTube OAuth tokens.
+
+Environment Variables
+
+Create a .env file or update your config with your BOT_TOKEN and Lavalink node details.
+
+Launch
 
 Bash
 python main.py
-🛡️ Permission System
-The bot features a hierarchical permission check system, ensuring that only authorized staff can access sensitive moderation commands, while logging all actions to the designated administrative channels.
+Developer Note
+This project was built to demonstrate backend problem-solving, specifically in handling API integrations and third-party library maintenance.
